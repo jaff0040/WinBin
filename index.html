@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" type="image/png" href="assets/images/wb-icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
   <header class="header" id="top">
@@ -23,12 +24,19 @@
       </button>
 
       <nav class="navbar" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#prices">Daily Prices</a>
-        <a href="#visit">Visit Us</a>
-        <a href="#contact" class="nav-cta">Contact</a>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#prices">Daily Prices</a>
+          <a href="#visit">Visit Us</a>
+
+          <div class="language-switcher">
+              <select name="language" id="lang">
+                  <option value="en">🇨🇦 EN</option>
+                  <option value="fr">🇫🇷 FR</option>
+              </select>
+          </div>
       </nav>
+
     </div>
   </header>
 
@@ -120,9 +128,45 @@
         <div class="visit-content reveal">
           <span class="section-kicker">VISIT THE STORE</span>
           <h2>Come Find Your Next Great Deal</h2>
-          <div class="contact-row"><span class="contact-icon">⌖</span><div><small>ADDRESS</small><strong>1177 St. Laurent Blvd<br>Ottawa, ON K1K 3B7</strong></div></div>
-          <div class="contact-row"><span class="contact-icon">☎</span><div><small>PHONE</small><a href="tel:+16137441414">(613) 744-1414</a></div></div>
-          <div class="contact-row"><span class="contact-icon">◷</span><div><small>OPENING TIME</small><strong>Opens at 9:30 a.m.</strong></div></div>
+
+
+          <div class="contact-row">
+            <span class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </span>
+
+            <div>
+                <small>ADDRESS</small>
+                <strong>
+                    1177 St. Laurent Blvd<br>
+                    Ottawa, ON K1K 3B7
+                </strong>
+            </div>
+        </div>
+
+        <div class="contact-row">
+            <span class="contact-icon">
+                <i class="fa-solid fa-phone"></i>
+            </span>
+
+            <div>
+                <small>PHONE</small>
+                <a href="tel:+16137441414">(613) 744-1414</a>
+            </div>
+        </div>
+
+        <div class="contact-row">
+            <span class="contact-icon">
+                <i class="fa-regular fa-clock"></i>
+            </span>
+
+            <div>
+                <small>OPENING HOURS</small>
+                <strong>Opens at 9:30 a.m.</strong>
+            </div>
+        </div>
+
+          
           <div class="visit-actions">
             <a href="https://www.google.com/maps/place/WinBin+Liquidation/@45.4231627,-75.6367541,18z/data=!3m1!4b1!4m6!3m5!1s0x4cce0fb8850f2f7d:0xfaa50acf5f2059fd!8m2!3d45.4231627!4d-75.6360481!16s%2Fg%2F11z4ssh7vc?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="btn btn-primary">Open in Google Maps</a>
             <a href="tel:+16137441414" class="btn btn-outline">Call Store</a>
@@ -152,8 +196,7 @@
           <p>Be among the first to hear about fresh restocks, giveaways, special offers and hidden gems.</p>
         </div>
         <div class="qr-wrap">
-          <img src="assets/images/whatsapp-vip.jpg" alt="Scan the WinBin WhatsApp VIP group QR code">
-          <span>Scan the QR code in the image</span>
+          <img src="assets/images/qr.png" alt="Scan the WinBin WhatsApp VIP group QR code">
         </div>
       </div>
     </section>
