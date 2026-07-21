@@ -146,7 +146,7 @@ button { font: inherit; }
 .map-label span { color: #aaa; font-size: .9rem; }
 
 .vip { background: linear-gradient(135deg, #080808, #15100d); }
-.vip-card { display: grid; grid-template-columns: 1fr 330px; gap: 60px; align-items: center; padding: 55px; border-radius: 26px; border: 1px solid rgba(239,90,36,.35); background: radial-gradient(circle at 85% 50%, rgba(239,90,36,.18), transparent 38%), #151515; }
+.vip-card { display: grid; grid-template-columns: 1fr 230px; gap: 60px; align-items: center; padding: 55px; border-radius: 26px; border: 1px solid rgba(239, 90, 36, 0.655); background: radial-gradient(circle at 85% 50%, rgba(239, 90, 36, 0.265), transparent 38%), #212121; }
 .vip-card p { color: var(--muted); line-height: 1.75; max-width: 620px; }
 .qr-wrap { padding: 14px; border-radius: 10px; background: white; color: #111; text-align: center; }
 .qr-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: center 53%; border-radius: 10px; }
