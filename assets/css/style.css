@@ -245,6 +245,160 @@ button { font: inherit; }
 
 
 
+
+
+
+
+
+/*  REVIEWS: */
+
+.reviews-section {
+    background: #101010;
+}
+
+.google-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 25px 0 10px;
+}
+
+.google-rating strong {
+    font: 800 2rem "Poppins", sans-serif;
+}
+
+.rating-stars,
+.review-stars {
+    color: #fbbc04;
+    letter-spacing: 3px;
+}
+
+.reviews-notice {
+    color: #888;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.google-attribution {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.review-card {
+    padding: 24px;
+    background: #171717;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.review-author > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.review-author a {
+    font-weight: 700;
+}
+
+.review-author a:hover,
+.review-source:hover {
+    color: #ef5a24;
+}
+
+.review-author small {
+    color: #888;
+}
+
+.review-avatar,
+.review-avatar-placeholder {
+    width: 46px;
+    height: 46px;
+    flex: 0 0 46px;
+    border-radius: 50%;
+}
+
+.review-avatar {
+    object-fit: cover;
+}
+
+.review-avatar-placeholder {
+    display: grid;
+    place-items: center;
+    color: #ffffff;
+    background: #ef5a24;
+    font-weight: 700;
+}
+
+.review-stars {
+    margin-bottom: 13px;
+}
+
+.review-card p {
+    color: #b9b9b9;
+    line-height: 1.7;
+}
+
+.review-source {
+    display: inline-block;
+    margin-top: 18px;
+    color: #aaaaaa;
+    font-size: 13px;
+}
+
+.reviews-button {
+    margin: 30px auto 0;
+}
+
+.place-attributions {
+    margin-top: 14px;
+    color: #888;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media (max-width: 900px) {
+    .reviews-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1020px) {
   .hero-grid, .two-column, .visit-grid { grid-template-columns: 1fr; }
   .hero { padding-top: 135px; }

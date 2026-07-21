@@ -123,6 +123,63 @@
 
 
 
+
+    
+
+
+<section class="section reviews-section" id="reviews">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-kicker">CUSTOMER REVIEWS</span>
+            <h2>What Our Customers Say</h2>
+            <p>Real customer experiences from Google Maps.</p>
+        </div>
+
+        <div class="google-rating">
+            <strong id="googleRating">--</strong>
+            <span class="rating-stars">★★★★★</span>
+            <span id="googleReviewCount"></span>
+        </div>
+
+        <p class="reviews-notice">
+            Reviews provided by
+            <span class="google-attribution" translate="no">
+                Google Maps
+            </span>
+            and ordered by relevance.
+        </p>
+
+        <div id="googleReviews" class="reviews-grid">
+            <p>Loading Google reviews...</p>
+        </div>
+
+        <div
+            id="placeAttributions"
+            class="place-attributions"
+        ></div>
+
+        <a
+            id="allGoogleReviews"
+            class="btn btn-outline reviews-button"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            View all reviews on Google Maps
+        </a>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
     <section class="section visit" id="visit">
       <div class="container visit-grid">
         <div class="visit-content reveal">
@@ -262,5 +319,10 @@
 
   
   <script src="assets/js/script.js"></script>
+
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-nzoKr8LHHv00A-SATyaus7_vrJwylzU&loading=async&libraries=places&callback=loadGoogleReviews&v=weekly">
+  </script>
+
 </body>
 </html>
